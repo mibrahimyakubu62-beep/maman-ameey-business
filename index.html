@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAMAN AMMEEY BUSINESS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-primary fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">MAMAN AMMEEY BUSINESS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <button id="themeToggle" class="btn btn-sm btn-outline-light ms-3">🌙 Dark</button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-light ms-3 fw-semibold" href="shop.html">🛍️ Shop Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="mt-5 pt-4">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image/textile.jpg" class="d-block w-100 hero-img" alt="Textile">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="fw-bold text-white shadow-text">Premium Textile Fabrics</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image/shoes.jpg" class="d-block w-100 hero-img" alt="Shoes">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="fw-bold text-white shadow-text">Quality Footwear Collection</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image/bags.jpg" class="d-block w-100 hero-img" alt="Bags">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="fw-bold text-white shadow-text">Stylish Bags & Accessories</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5 text-center bg-light">
+        <div class="container">
+            <h2 class="fw-bold text-primary mb-3">About Us</h2>
+            <p class="lead">At <strong>MAMAN AMMEEY BUSINESS</strong>, we offer premium textiles, shoes, caps,
+                jewellery, boxes, bags, and mattresses — affordable, stylish, and durable.</p>
+        </div>
+    </section>
+
+    <section id="products" class="py-5 text-center">
+        <div class="container">
+            <h2 class="fw-bold text-primary mb-4">Top Products</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm"><img src="image/textile.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Textile</h5>
+                            <p>Quality fabrics for all occasions.</p><a href="shop.html"
+                                class="btn btn-outline-primary">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm"><img src="image/jewellery.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Jewellery</h5>
+                            <p>Elegant designs to brighten your look.</p><a href="shop.html"
+                                class="btn btn-outline-primary">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm"><img src="image/bags.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Bags</h5>
+                            <p>Stylish and durable bags for everyday use.</p><a href="shop.html"
+                                class="btn btn-outline-primary">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="shop.html" class="btn btn-primary mt-4 px-4 py-2 fw-semibold">🛍️ Explore Full Shop</a>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-light text-center">
+        <div class="container">
+            <h2 class="fw-bold text-primary mb-3">Contact Us</h2>
+            <p>📞 <strong>07067079028</strong></p>
+            <p>📧 mamanammeeybusiness@gmail.com</p>
+            <a href="https://wa.me/2347067079028" target="_blank" class="btn btn-success fw-semibold">💬 Chat on
+                WhatsApp</a>
+        </div>
+    </section>
+
+    <section class="bank-info text-center mt-5 p-4 border-top">
+        <h5>💳 Payment Information</h5>
+        <p><strong>Account Name:</strong> Mohammed Maryam Ibrahim</p>
+        <p><strong>Account Number:</strong> 7067079028</p>
+        <p><strong>Bank:</strong> Opay</p>
+    </section>
+
+    <footer class="bg-gradient-primary text-white text-center py-3 mt-3">© 2026 MAMAN AMMEEY BUSINESS.</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="shop.js"></script>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/2347067079028" target="_blank" class="whatsapp-float">💬</a>
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+/* ---------------------------
+   MAMAN AMMEEY BUSINESS STYLE
+------------------------------*/
+
+/* GENERAL */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+    transition: background 0.4s, color 0.4s;
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(45deg, #007BFF, #00B4D8);
+}
+
+/* NAVBAR */
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #00B4D8 !important;
+}
+
+/* HERO */
+.hero-img {
+    height: 85vh;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.shadow-text {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #007BFF, #00B4D8);
+}
+
+/* PRODUCT CARDS */
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.btn-outline-primary:hover {
+    background-color: #00B4D8;
+    color: #fff;
+}
+
+/* CART */
+.sticky-cart {
+    position: sticky;
+    top: 90px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+.list-group-item {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #eee;
+}
+
+/* CUSTOMER FORM */
+#customerName,
+#customerPhone,
+#customerAddress {
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* BANK INFO */
+.bank-info {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+/* FOOTER */
+footer {
+    font-weight: 500;
+}
+
+/* DARK MODE */
+.dark-mode {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .navbar {
+    background: linear-gradient(45deg, #222, #333);
+}
+
+.dark-mode .card,
+.dark-mode .bank-info,
+.dark-mode .sticky-cart,
+.dark-mode .modal-content {
+    background-color: #1f1f1f !important;
+    color: #fff !important;
+    border-color: #333 !important;
+}
+
+.dark-mode .btn-outline-primary {
+    color: #fff !important;
+    border-color: #00B4D8 !important;
+}
+
+.dark-mode .btn-outline-primary:hover {
+    background-color: #00B4D8 !important;
+    color: #000 !important;
+}
+
+.dark-mode footer {
+    background: linear-gradient(45deg, #111, #222);
+}
+
+/* FLOATING WHATSAPP BUTTON */
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25d366;
+    color: white;
+    font-size: 26px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 12px 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    background-color: #1ebe5d;
+    transform: scale(1.1);
+}
+
+.dark-mode .whatsapp-float {
+    background-color: #128C7E;
+}
+
+/* ADD ITEM ALERT */
+.added-alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #00B4D8;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeInOut 1.5s ease;
+    z-index: 99999;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    20% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero-img {
+        height: 55vh;
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .sticky-cart {
+        top: 70px;
+    }
+}
+
+@media (max-width: 576px) {
+    .whatsapp-float {
+        bottom: 15px;
+        right: 15px;
+        font-size: 22px;
+        padding: 10px 12px;
+    }
+}
